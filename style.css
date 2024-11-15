@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+nav .container {
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  align-items: center;
+  transform: scaleX(100) 1s ease;
+}
+
+nav .container .logo {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+nav .container .links {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav .container .links li {
+  margin: 10px;
+  position: relative;
+}
+
+nav .container .links li a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  line-height: 1.2; /* Adjusts vertical alignment of text */
+  padding-bottom: 2px; 
+  line-height: 2; 
+  transition: color 0.3s ease-in-out;
+}
+
+nav .container .links li a:hover {
+  color: #007BFF;
+}
+
+nav .container .links li a.selected {
+  color: #007BFF;
+  font-weight: bold; 
+}
+
+nav .container .links li a.selected::after {
+  width: 100%; 
+}
+
+nav .container .links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Move the underline closer to the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007BFF;
+  transition: width 0.3s ease-in-out;
+}
+
+nav .container .links li a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Dropdown menu styling */
+nav .container .links .dropdown-menu {
+  display: none; /* Hide dropdown initially */
+  position: absolute;
+  top: 100%; /* Position it below the parent li */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  border-radius: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+nav .container .links .dropdown-menu li a {
+  color: #000;
+  white-space: nowrap; /* Prevent text wrapping */
+  padding: 10px;
+}
+
+nav .container .links .dropdown-menu li a:hover {
+  color:#007BFF ;
+  border-radius: 20px;
+}
+
+/* Show dropdown on hover */
+nav .container .links li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+nav .container .header-btn {
+  display: flex;
+  gap: 3rem;
+  padding-right: 40px;
+  margin-left: auto;
+}
+
+nav .container .header-btn a {
+  text-decoration: none;
+  padding: 10px;
+  color: #1f1f1f;
+  font-weight: bolder;
+}
+
+nav .container .header-btn a:hover {
+  animation: fade 0.3s;
+  background-color: #000;
+  color: rgb(243, 243, 243);
+  border-radius: 50px;
+}
+
+@keyframes fade {
+  0% {
+    background-color: rgb(243, 243, 243);
+    color: #1f1f1f;
+    border-radius: 5px;
+  }
+  100% {
+    color: rgb(243, 243, 243);
+    background-color: #000;
+    border-radius: 50px;
+  }
+}
