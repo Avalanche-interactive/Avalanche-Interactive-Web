@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* Purchase Games */
+.games{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #5f5f5f;
+}
+
+.game-container{
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.game-container h2{
+    font-weight: bold;
+}
+
+.game-container a{
+    color: #AFAFAF;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px;
+}
+.game-container a:hover{
+    border-radius: 10px;
+    background-color: #000;
+    animation: fade 1s;
+}
+
+.game-container img{
+    border-radius: 50px;
+    width: 100%;
+    height: 75%;
+}
+
+@keyframes fade {
+    0% {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+    }
+    100% {
+      color: rgb(243, 243, 243);
+      background-color: #000;
+      border-radius: 50px;
+    }
+  }

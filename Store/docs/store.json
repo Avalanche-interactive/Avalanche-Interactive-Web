@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Operation facility",
+        "img-path": "http://localhost/avalanche-interactive-web/assets/images/posters/operation-poster.png"
+    },
+    {
+        "name": "God Of War",
+        "img-path": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/game-poster-design-template-62fff495e1e215a7afac90564ab35dac_screen.jpg?ts=1693897434"
+    },
+    {
+        "name":"BattleGround",
+        "img-path":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/game-poster-design-template-c6ab2b406ba002bc19f4546043e47bba_screen.jpg?ts=1642832202"
+    }
+]

@@ -4,25 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/Logo.png" type="image/x-icon">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Avalanche Interactive</title>
+    <style>
+        .header-btn .btn-selected {
+            background-color: #000;
+            border-radius: 50px;
+        }
+
+        .header-btn .btn-selected a {
+            color: yellow !important;
+        }
+    </style>
+
+    <title>Sign Up</title>
 </head>
 
 <body>
     <nav>
         <div class="container">
-            <img class="logo" src="assets/images/Logo.png" alt="Avalanche Interactive Logo">
+            <img class="logo" src="../assets/images/Logo.png" alt="Avalanche Interactive Logo">
 
             <ul class="links">
                 <li>
-                    <a class="selected" href="">Home</a>
+                    <a href="../">Home</a>
                 </li>
                 <li class="dropdown">
-                    <a href="">About</a>
+                    <a href="#">About</a>
                     <ul class="dropdown-menu">
                         <li><a href="">Comapny</a></li>
                         <li><a href="">Engine</a></li>
@@ -44,32 +56,28 @@
             </ul>
 
             <div class="header-btn">
-                <a href="Sign-Up">Sign-Up</a>
+                <a class="btn-selected" href="">Sign-Up</a>
                 <a href="">Login</a>
             </div>
         </div>
     </nav>
 
-    <div class="latest-game">
-        <div class="container">
-            <img width="200px" src="assets/images/posters/operation-poster.png" alt="">
-            <h1>Operation facility</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur non neque consequuntur
-                facilis suscipit qui soluta necessitatibus debitis porro natus est perferendis at minus similique,
-                laudantium nostrum sequi harum!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-                quidem doloribus temporibus ipsam doloremque voluptates pariatur repellendus minus fuga maxime eius
-                nemo, debitis, dolor error tempora? Excepturi fugit repudiandae cum? Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Aspernatur blanditiis quae iste quo et repudiandae dolor possimus, quia
-                expedita harum voluptatibus nesciunt aliquid. Nobis eius obcaecati culpa laudantium. Ipsam, autem?
-            </p>
-            <ul>
-                <li><a href="">Learn More</a></li>
-                <li><a href="">Purchase</a></li>
-            </ul>
-        </div>
-    </div>
+    <main>
 
+        <div class="sign-up-form">
+            <form>
+                <div class="form-item">
+                    <label for="fname">Email Address:</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="form-item">
+                    <label for="lname">Password:</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+            </form>
+
+        </div>
+    </main>
 
     <footer>
         <div class="footer-container">
